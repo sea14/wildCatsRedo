@@ -1,0 +1,39 @@
+/*CSS for Wild Cats */
+body{
+		background: #808080;
+		
+}
+
+#container{
+
+		width: 50%;
+		height: 70%;
+		background: #000;
+		margin-top: 5%;
+		margin-left: 10%;
+}
+
+#intro{
+
+		color: #fff;
+		float: left;
+		background: #000;
+		font-size: 0.8em;
+		padding: 3%;
+		margin-right: 5%;
+}
+
+#lion{
+
+
+}
+
+#tiger{
+
+
+}
+
+#leopard{
+
+
+}
