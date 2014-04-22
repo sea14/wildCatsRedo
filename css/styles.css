@@ -1,49 +1,82 @@
 /*CSS for Wild Cats */
 body{
-		background: #808080;
+	
+	background: #808080;
 		
 }
 
-#container{
+section{
 
-		width: 50%;
-		height: 70%;
-		background: #000;
-		margin-top: 5%;
-		margin-left: 10%;
+	width: 80%;
+	height: 90%;
+	background: #000;
+	margin-top: 5%;
+	margin-left: 2%;
+		
 }
 
-#intro{
+.intro{
 
-		color: #fff;
-		float: left;
-		background: #000;
-		font-size: 0.8em;
-		padding: 3%;
-		margin-right: 5%;
+	color: #fff;
+	width: 20%;
+	font-size: 0.85em;
+	padding: 2%;
+	float: right;
+
+}
+
+.main{
+
+	margin-left: 2%;
+	margin-bottom: 2%;
+	margin-top: 2%;
+
+
+}
+
+.nextButton{
+
+	background: #006400;
+	color: #fff;
+	width: 10%;
+	text-align: center;
+	float: right;
+	margin-right: 2%;
 }
 
 #lion{
 
-		background: #000;
-		color: #fff;
+	margin-left: 2%;
+	color: #fff;
+	
+
+
+}
+
+#lion > h2{
 
 
 }
 
 #tiger{
 
+	margin-left: 2%;
 
 }
 
 #leopard{
 
+	margin-left: 2%;
 
 }
 
 #snow{
 
+	margin-left: 2%;
+
 }
 #cheetah{
+
+	margin-left: 2%;
 	
 }
