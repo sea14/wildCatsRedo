@@ -5,7 +5,39 @@
 		<title>Wild Cats</title>
 
 		<link rel="stylesheet" type="text/css" media="screen" href="css/styles.css" />
-		<script type="text/javascript" src="../js/highslide/highslide-with-html.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script type="text/javascript" src="js/highslide/highslide-with-html.js"></script>
+		<script type="text/javascript" src="js/slideshow.js"></script>
+
+		<script type="text/javascript">
+			//activate highcharts
+
+			hs.graphicsDir = 'highslide/graphics/';
+			hs.outlineType = 'rounded-white';
+			hs.outlineWhileAnimating = true;
+			hs.wrapperClassName = 'draggable-header';
+			hs.align = 'center';
+			hs.transitions = ['expand', 'crossfade'];
+			hs.outlineType = 'glossy-dark';
+			hs.wrapperClassName = 'dark';
+			hs.fadeInOut = true;
+			
+
+
+			// Add the controlbar
+			if (hs.addSlideshow) hs.addSlideshow({
+				//slideshowGroup: 'group1',
+				interval: 5000,
+				repeat: false,
+				useControls: true,
+				fixedControls: 'fit',
+				overlayOptions: {
+					opacity: .6,
+					position: 'bottom center',
+					hideOnMouseOut: true
+				}
+			});
+		</script>
 
 	</head>
 
@@ -13,54 +45,77 @@
 
 		<div id = "container">
 
-			<div id = "intro">
+				<section id = "intro">
 
-				<p>This is a slideshow that highlights several species of wild cats through images, video and text. Click on the numbers or the arrows at the bottom of the screen in order to proceed. There will be a quiz at the end, just for fun.</p>
+					<p>This is a slideshow that highlights several species of wild cats through images, video and text. Click on the numbers or the arrows at the bottom of the screen in order to proceed. There will be a quiz at the end, just for fun.</p>
 
-			</div> <!--end intro-->
+					<img src="images/introImage.png" alt="Introduction image for Wild Cats">
 
+					<div class = "nextButton">Click me</div>
 
-			<div id="lion">
+				</section> <!--end intro-->
 
-				<!--lion highcharts encoding below-->
-
-			</div> <!--end lion-->
-
-
-
-			<div id="tiger">
-
-				<!--tiger highcharts encoding below-->
-
-			</div> <!--end tiger-->
+				
+		
 
 
+			
+				<section id="lion">
 
-			<div id="cheetah">
+					<img src="images/introImage.png" alt="Introduction image for lion">
+					i am a liion
+					
 
-				<!--cheetah highcharts encoding below-->
-
-			</div> <!--end cheetah-->
-
-
-			<div id="snow">
-
-				<!--snow leopard highcharts encoding below-->
-
-			</div> <!--close snow leopard-->
+				</section> <!--end lion-->
 
 
-			<div id="leopard">
 
-				<!--leopard highcharts encoding below-->
+	
+				<section id="tiger">
 
-			</div>
+					<img src="images/introImage.png" class="catImage" alt="Introduction image for tiger">
+
+					<!--tiger highcharts encoding below-->
+
+				</section> <!--end tiger-->
 
 
-			<div id="quiz">
 
-			</div> <!--close quiz-->
+			
+				<section id="cheetah">
 
+					<img src="images/introImage.png" class="catImage" alt="Introduction image for cheetah">
+
+					<!--cheetah highcharts encoding below-->
+
+				</section> <!--end cheetah-->
+
+
+
+		
+				<section id="snow">
+
+					<img src="images/introImage.png" class="catImage" alt="Introduction image for snow leopard">
+					<!--snow leopard highcharts encoding below-->
+
+				</section> <!--close snow leopard-->
+
+
+
+				<section id="leopard">
+
+					<img src="images/introImage.png" class="catImage" alt="Introduction image for leopard">
+					<!--leopard highcharts encoding below-->
+
+				</section>
+
+
+
+			<section class="slide">
+				<div id="quiz">
+
+				</div> <!--close quiz-->
+			</section>
 
 
 		</div> <!--close contianer-->
